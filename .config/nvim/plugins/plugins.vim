@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-treesitter/playground'
     Plug 'jacoborus/tender.vim'
+    Plug 'preservim/nerdcommenter'
 
     " Smart Bracket Matching
     Plug 'tmsvg/pear-tree'
@@ -16,6 +17,18 @@ call plug#begin('~/.vim/plugged')
     Plug 'w0ng/vim-hybrid'
 
     " Syntax
+    Plug 'godlygeek/tabular'                 " tabular plugin is used to format tables
+    Plug 'elzr/vim-json'                     " JSON front matter highlight plugin
+    Plug 'plasticboy/vim-markdown'
+    Plug 'vim-pandoc/vim-pandoc'
+    Plug 'vim-pandoc/vim-pandoc-syntax'
+
+    " Snippets
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
+
+    " Markdown (needs nodejs and yarn pre installed)
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
     " Nerdtree
     Plug 'Xuyuanp/nerdtree-git-plugin'

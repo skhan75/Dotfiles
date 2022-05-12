@@ -1,5 +1,5 @@
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-highlight Normal guibg=none
+" highlight ColorColumn ctermbg=0
+hi Normal guibg=NONE ctermbg=NONE
 
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0 
@@ -9,3 +9,4 @@ let g:ctrlp_use_caching = 0
 if executable('rg')
     let g:rg_derive_root='true'
 endif
+
